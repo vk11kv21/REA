@@ -1,0 +1,13 @@
+node_modules/
+npm-debug.log*
+reports/
+samples/*
+!samples/.gitkeep
+
+# never commit binaries you are analysing
+*.exe
+*.dll
+*.sys
+*.bin
+*.apk
+*.so

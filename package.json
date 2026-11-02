@@ -1,0 +1,41 @@
+{
+  "name": "rea-toolkit",
+  "version": "0.1.0",
+  "description": "Dependency-free command line toolkit for reverse-engineering triage: identify binaries, extract strings, map entropy, parse PE/ELF headers and imports, inspect APK/ZIP payloads and write a case report.",
+  "type": "module",
+  "bin": {
+    "rea": "bin/rea.js"
+  },
+  "main": "src/cli.js",
+  "exports": {
+    ".": "./src/cli.js",
+    "./lib/*": "./src/lib/*.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "rea": "node bin/rea.js"
+  },
+  "keywords": [
+    "reverse-engineering",
+    "rea",
+    "binary-analysis",
+    "pe",
+    "elf",
+    "entropy",
+    "strings",
+    "apk",
+    "cli",
+    "triage"
+  ],
+  "author": "vk11kv21",
+  "license": "MIT"
+}
